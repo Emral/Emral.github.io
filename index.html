@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Henri Beeres</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Kanit|Sarala" rel="stylesheet"> 
+	
+</head>
+
+<body>
+	<script type="application/javascript">
+		var elements = [
+			'bio',
+			'works',
+			'gallery'
+		];
+		function sceneButton(id){
+			for (i=0; i < elements.length; i++) {
+				var block = document.getElementById(elements[i]);
+				block.style.display = "none";
+				var btn = document.getElementById("btn" + i);
+				btn.classList.add("bannerButton");
+				btn.classList.remove("btnHlit");
+			}
+			document.getElementById(elements[id]).style.display = "block";
+			var btn = document.getElementById("btn" + id);
+				btn.classList.remove("bannerButton");
+				btn.classList.add("btnHlit");
+		}
+	</script>
+	
+	<div id = "wrapper">
+		<header><img alt src="lgoo.png" class="title"></header>
+		
+		<div class = "fieldBorder" style="clear:both; background-color:#D99663;">
+			<div class = "centerContent">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Welcome
+				</h2>
+			</div>
+		</div>
+		<div id="bio">
+			<div class="fieldBorder">
+				<article class="textField">
+						Hello and welcome to my website! I'm a german Game Designer born in '98 who has been working on game projects since 2011 and started extensively studying the subject in 2015. This site lists both my large and independent projects, as well as some of my more recent smaller projects.
+				</article>
+			</div>
+		</div>
+		
+		<div class = "fieldBorder" style="clear:both; background-color:#D99663;">
+			<div class = "centerContent">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Projects
+				</h2>
+			</div>
+		</div>
+		<div id="projects" class = "centerContent">
+			<table class = "htable">
+				<tr>
+					<td style="width:50%">
+							<img class="flowImg" alt src="img_sysy.png">
+					</td>
+					<td>
+						<div class="fieldBorder" style="background-color:#D99663">
+							<article class="textField" style="font-size: 250%">System Sync (2018)</article>
+							<article class="textField">
+								Roles: Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team: 3 people
+							</article>
+						</div>
+						<div class="fieldBorder">
+							<article class="textField">System Sync is a 2D Co-op Puzzle Platformer in which players have to roll, jump and lift each other in order to overcome magnetism-based puzzles. The game features four levels and was developed over the cours of five months.</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%">
+							<img class="flowImg" alt src="img_a3dt.png">
+					</td>
+					<td>
+						<div class="fieldBorder" style="background-color:#D99663">
+							<article class="textField" style="font-size: 250%">A Christmas Thing (2017)</article>
+							<article class="textField">
+								Roles: Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team: 3 people
+							</article>
+						</div>
+						<div class="fieldBorder">
+							<article class="textField">A Christmas Thing is a 3D Platformer conceptualised as a christmas present for the YouTube celebrity "raocow". The player takes control of Demo, a cycloptic girl, on her quest to find Super Leeks. The game spans two stages and a boss fight. It serves as a tech demo for a future Unity Engine framework and was developed over the course of three months.</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%">
+							<img class="flowImg" alt src="img_clicker.png">
+					</td>
+					<td>
+						<div class="fieldBorder" style="background-color:#D99663">
+							<article class="textField" style="font-size: 250%">Jungle Clicker (2017)</article>
+							<article class="textField">
+								Roles: Artist, Programmer
+							</article>
+							<article class="textField">
+								Team: 4 people
+							</article>
+						</div>
+						<div class="fieldBorder">
+							<article class="textField">Jungle Clicker is a clicker game in which the player purchases plants and animals to create an ecosystem on a tree in the rainforest. Plants and animals have unique interactions with each other which stay true to reality, teaching the player about how plants and animals live alongside each other. It was developed over the course of five months.</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%">
+							<img class="flowImg" alt src="img_h2ohm.png">
+					</td>
+					<td>
+						<div class="fieldBorder" style="background-color:#D99663">
+							<article class="textField" style="font-size: 250%">H2Ω (2017)</article>
+							<article class="textField">
+								Roles: Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team: 5 people
+							</article>
+						</div>
+						<div class="fieldBorder">
+							<article class="textField">H2Ω is a 2D Arcade Game about a security robot who finds his lab flooded and all other robots out of control. Now his goal is to defend himself against his former companions and escape the lab before the water catches up to him. It was developed over the course of five months.</article>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "fieldBorder" style="clear:both; background-color:#D99663;">
+			<div class = "centerContent">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Fan Projects
+				</h2>
+			</div>
+		</div>
+		<div class="fieldBorder" style="background-color:#D99663;">
+			<article class="textField">
+				These projects are projects which I create in my free time to improve my skills. All copyright for assets and music goes to their respective owners.
+			</article>
+		</div>
+		<div id="fan" class = "centerContent">
+			<table class = "htable">
+				<tr>
+					<td>
+						<div class="fieldBorder">
+							<article class="textField" style="font-size: 200%">Summer Makeover (2017)</article>
+							<article class="textField">
+								A game in the 2k1x-series using the SMBX fan-engine.
+							</article>
+						</div>
+					</td>
+					<td>
+						<div class="fieldBorder">
+							<article class="textField" style="font-size: 200%">Make a Good Mega Man Level 2 (2017)</article>
+							<article class="textField">
+								A compilation of levels for a contest using GameMaker.
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="fieldBorder">
+							<article class="textField" style="font-size: 200%">Level Contest Japan (2017)</article>
+							<article class="textField">
+								A compilation of levels for a contest in the SMBX fan-engine.
+							</article>
+						</div>
+					</td>
+					<td>
+						<div class="fieldBorder">
+							<article class="textField" style="font-size: 200%">December Collapse (2016)</article>
+							<article class="textField">
+								A game in the 2k1x-series using the SMBX fan-engine.
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="fieldBorder">
+							<article class="textField" style="font-size: 200%">Hypnosis Redo (2016)</article>
+							<article class="textField">
+								A game in the 2k1x-series using the SMBX fan-engine.
+							</article>
+						</div>
+					</td>
+					<td>
+						<div class="fieldBorder">
+							<article class="textField" style="font-size: 200%">SMBX2 Beta 3 (2016)</article>
+							<article class="textField">
+								A release of the SMBX2 extension for the SMBX fan-engine.
+							</article>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "fieldBorder" style="clear:both; background-color:#D99663;">
+			<div class = "centerContent">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Contact
+				</h2>
+			</div>
+		</div>
+		<div class = "fieldBorder">
+			<article class="textField">
+				<p>
+					Imagine<br>
+					this is where<br>
+					contact info and<br>
+					related sites<br>
+					go
+				</p>
+			</article>
+		</div>
+	</div>
+</body>
+</html>
