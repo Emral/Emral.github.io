@@ -2,8 +2,8 @@
 /* CSS Document */
 
 body {
-	background-image: url(bg_flat.png);
-	background-color: #686D6D;
+	background-image: url(cubes.png);
+	background-color: #000838;
 }
 
 #wrapper {
@@ -20,9 +20,9 @@ html{
 }
 
 .title{
-	width:30%;
-	padding-left: 20px;
-	padding-top: 20px;
+	width:400px;
+	padding:auto;
+	margin:auto;
 }
 
 .htable {
@@ -89,6 +89,10 @@ html{
 	
 }
 
+a {
+	color: orange;
+}
+
 .rightImg{
 	width:15%;
 	margin: 30px 20px 20px 20px;
@@ -124,76 +128,31 @@ html{
 	font-display: block;
 }
 
-
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  	position: relative;
-  	margin: 0 auto;
+.titleBoundaryV2, .textBoundaryV2, .subTitleBoundaryV2 {
+	border-color: cyan;
+	border-radius: 12px;
+	border-style: inset;
+	border-width: 4px;
+	padding: 2px;
+	margin: 20px auto;
+	color: black;
+	background-color: #36383B99
 }
 
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  	content: '';
-  	position: absolute;
-  	width: 16px;
-  	background-color:#ECE89A;
-  	background-image: url(bg_arrow.png);
-  	top: 0;
-  	bottom: 0;
-	align-content: center;
-	align-self: center;
-	align-items: center;
-  	left: 7.5%;
-	box-shadow: 0px 10px 0px 0px #00002233;
-  	margin: 30px 20px 20px 20px;
-	animation: timelinearrows 3s infinite linear;
+.textBoundaryV2 {
+	border-color:#0479D9;
 }
 
-@keyframes timelinearrows {
-	0%{
-		background-position: 0px 0px;
-	}
-	100%{
-		background-position: 0px 48px;
-	}
+.titleBoundaryV2 {
+	background-color: #36383BBB
 }
 
-/* Container around content */
-.container {
-  	padding: 5px 40px;
- 	position: relative;
-  	background-color: inherit;
-  	width: 80%;
+.subTitleBoundaryV2 {
+	border-color: aquamarine;
+	padding:12px;
+	margin:30px auto;
+	border-width: 3px;
 }
-
-/* The circles on the timeline */
-.container::after {
-  	content: '';
-  	position: absolute;
-  	width: 25px;
- 	height: 25px;
- 	right: -17px;
-  	left: 0%;
-  	background-color: #37B0B1;
-  	border: 4px solid #E9904C;
-  	top: 55px;
-  	border-radius: 50%;
-  	z-index: 1;
-}
-
-/* Place the container to the right */
-.right {
-  	left: 8%;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  	left: 7px;
-}
-
-
 
 .hoverText {
   position: relative;
@@ -223,9 +182,13 @@ html{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  	max-width: 1000px;
+ 	position: relative;
+ 	margin: auto;
+	border-width: thick;
+	border-color: #0479D9;
+	border-radius: 12px;
+	border-style: inset;
 }
 
 /* Hide the images by default */
@@ -244,18 +207,18 @@ html{
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-	background-color: rgba(0,0,0,0.4);
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	margin-top: -22px;
+  	padding: 16px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 18px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+	background-color: rgba(56,19,108,0.80);
 }
 
 /* Position the "next button" to the right */
@@ -266,7 +229,7 @@ html{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+	background-color: rgba(56,38,208,0.80);
 }
 
 /* Caption text */
@@ -277,7 +240,7 @@ html{
   position: absolute;
   bottom: 0px;
 	width:100%;
-	background-color: #000000AA;
+	background-color: rgba(56,19,108,0.80);
     text-align: center;
 }
 
