@@ -1,6 +1,6 @@
 <?php
 echo "BPP Archives";
-$path = "BPP/";
+$path = ".";
 $dh = opendir($path);
 $i=1;
 while (($file = readdir($dh)) !== false) {
