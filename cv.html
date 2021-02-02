@@ -23,13 +23,18 @@
 	function showSlides(n, no) {
 	  var i;
 	  var x = document.getElementsByClassName(slideId[no]);
-	  if (n > x.length) {slideIndex[no] = 1}
-	  if (n < 1) {slideIndex[no] = x.length}
-	  for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	  }
-	  x[slideIndex[no]-1].style.display = "block";
-		//setTimeout(plusSlides(n+1, no, 2000));
+	  if (x.length > 0) {
+
+if (n > x.length) {slideIndex[no] = 1}
+if (n < 1) {slideIndex[no] = x.length}
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+console.log(x.length)
+x[slideIndex[no]-1].style.display = "block";
+  //setTimeout(plusSlides(n+1, no, 2000));
+
+	  } 
 	}
 	showSlides(1, 0);
 	showSlides(1, 1);
@@ -196,7 +201,7 @@
 				</h6>
 			</div>
 			<div style="text-align-last: center;">
-				<iframe width="800px" height="600px" src="https://www.youtube.com/embed/BfPCodSsWOo"/>
+				<iframe width="800px" height="600px" src="https://www.youtube.com/embed/BfPCodSsWOo"></iframe>
 			</div>
 			<h6 class="textField" style="font-size: 75%; text-align: center;">
 				All third-party assets used are properly credited within the game.
